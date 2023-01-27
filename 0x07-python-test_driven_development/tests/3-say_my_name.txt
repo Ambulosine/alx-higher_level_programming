@@ -1,0 +1,25 @@
+'''
+doctest test file for module 3-say_my_name
+function say_my_name: prints the full name in a sentence
+  Args:
+    first_name(str): first name
+	last_name(str): last name (optional)
+  Return:
+	nothing
+
+>>> say = __import__("3-say_my_name").say_my_name
+>>> say("John", "Doe")
+My name is John Doe
+>>> say("John")
+My name is John 
+>>> say(47, 4)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+>>> say(47, "Doe")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+>>> say("John", 47)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+'''

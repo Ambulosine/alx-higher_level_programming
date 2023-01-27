@@ -1,0 +1,29 @@
+'''
+doctest test file for module 4-print_square.py
+function print_square:
+  prints a square using '#'
+  Args:
+    size(int): size of the square
+  Return:
+	nothing
+
+>>> print_sq = __import__('4-print_square').print_square
+>>> print_sq(4)
+####
+####
+####
+####
+>>> print_sq('four')
+Traceback (most recent call last):
+TypeError: size must be an integer
+>>> print_sq(-5)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+>>> print_sq(5.2)
+Traceback (most recent call last):
+TypeError: size must be an integer
+>>> print_sq(-2.5)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+'''

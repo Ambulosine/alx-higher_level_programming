@@ -1,0 +1,44 @@
+'''
+doctest test file for module ../2-matrix_divided.py
+function matrix_divided:
+divides all elements of a given matrix by a given divisor(div)
+    Args:
+        matrix(list of lists): 2-D list of lists of integers/floats
+	    div: the divisor
+	Return:
+        list of lists: a new matrix, same size as matrix containing
+		the results of division of all elements of matrix by div
+
+>>> div = __import__("2-matrix_divided").matrix_divided
+>>> m = [[2, 4, 6, 8], [1, 59, 5, 8], [40, 3, 5, 30]]
+>>> div(m, 4)
+[[0.5, 1.0, 1.5, 2.0], [0.25, 14.75, 1.25, 2.0], [10.0, 0.75, 1.25, 7.5]]
+>>> m = [[2, 4, 6, 8], [1, 59, 5, 8]]
+>>> div(m, 4)
+[[0.5, 1.0, 1.5, 2.0], [0.25, 14.75, 1.25, 2.0]]
+>>> m = [[2, 4, -6, 8], [1, -5, 5, 8]]
+>>> div(m, 4)
+[[0.5, 1.0, -1.5, 2.0], [0.25, -1.25, 1.25, 2.0]]
+>>> div(50, 4)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> div('five', 4)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> m = [[2, 4, -6, 8], [1, 5, 8]]
+>>> div(m, 4)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+>>> m = [[2, 4, -6], [1, 5, 8]]
+>>> div(m, 4)
+[[0.5, 1.0, -1.5], [0.25, 1.25, 2.0]]
+>>> div(m, 1.5)
+[[1.33, 2.67, -4.0], [0.67, 3.33, 5.33]]
+>>> div(m, 'four')
+Traceback (most recent call last):
+TypeError: div must be a number
+>>> div(m, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+'''

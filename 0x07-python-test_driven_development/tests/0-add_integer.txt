@@ -1,0 +1,29 @@
+'''
+doctest test file for ../0-add_integer.py module
+the add_integer function that one positional int/float
+and another optional int/float (default is 98) and
+return their sum as an int
+
+>>> add = __import__("0-add_integer").add_integer
+>>> add(15, 25)
+40
+>>> add(24)
+122
+>>> add(10.5, 3.5)
+13
+>>> add(12, 8.9)
+20
+>>> add('one', 45)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add(25, 'five')
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add('ten', 'five')
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add([1,3], 54)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+'''

@@ -1,0 +1,31 @@
+'''
+doctest file for module 5-text_indentation.py
+function text_indentation:
+  adds 2 newlines after '.', '?', ':'
+  Args:
+    text(str): the text to be printed
+  Return:
+    nothing
+
+>>> indent = __import__("5-text_indentation").text_indentation
+>>> a = "My name is John. I live in Bangladesh. Really? There are four directions: North. South. East. West."
+>>> indent(a) #doctest: +NORMALIZE_WHITESPACE
+My name is John.
+I live in Bangladesh.
+Really?
+There are four directions:
+North.
+South.
+East.
+West.
+
+>>> indent("John Doe")
+John Doe
+>>> indent(55)
+Traceback (most recent call last):
+TypeError: text must be a string
+>>> indent(['s', 'h'])
+Traceback (most recent call last):
+TypeError: text must be a string
+
+'''
